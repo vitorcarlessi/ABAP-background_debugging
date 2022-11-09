@@ -3,7 +3,7 @@
 *                       github.com/vitorcarlessi/                      *
 *                                                                      *
 *======================================================================*
-* Program.....: J_1BLB09                                               *
+* Program.....: Z_BACKGROUND_DEBUG                                     *
 * Module......: SD                                                     *
 * Description.: Background ABAP debugging                              *
 *----------------------------------------------------------------------*
