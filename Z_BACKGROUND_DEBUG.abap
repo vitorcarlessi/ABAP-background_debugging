@@ -1,19 +1,33 @@
+*======================================================================*
+*                                                                      *
+*                       github.com/vitorcarlessi/                      *
+*                                                                      *
+*======================================================================*
+* Program.....: J_1BLB09                                               *
+* Module......: SD                                                     *
+* Description.: Background ABAP debugging                              *
+*----------------------------------------------------------------------*
+* Author......: Vitor Crepaldi Carlessi                                *
+* Date........: 09.11.2022                                             *
+*======================================================================*
+  
   DO.
 
-    "Tabela das variáveis de variante (dependente mandante)
+    "Select -> Table of Variant Variables (Client-Specific)
     SELECT SINGLE *
     FROM tvarvc
     INTO @DATA(ls_tvarvc)
     WHERE name EQ 'Z_DEBUG_WF'.
 
-    "Se o parâmetro está preenchido continua no DO. ENDDO.
+    "If the parameter is filled, it continues in the DO. ENDDO.
     IF ls_tvarvc-low IS INITIAL.
-      "Parâmetro vazio -> Sai do DO. ENDDO.
+      "Empty parameter -> Exit DO. ENDDO.
       EXIT.
     ENDIF.
 
   ENDDO.
-
+  
+  "Basic condition to jump from DO. ENDDO. and continue the logic
   IF sy-subrc IS INITIAL.
 
   ENDIF.
