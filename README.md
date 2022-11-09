@@ -1,5 +1,10 @@
 # ABAP-background_debugging
 1) Go to transaction /nstvarv
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/27222015/200888104-8be2aae1-fd2b-4b47-b406-e0629186b96c.png" width="700px" />
+</div>
+
 2) Create a new parameter Z_DEBUG_WF
 
 <div align="center">
